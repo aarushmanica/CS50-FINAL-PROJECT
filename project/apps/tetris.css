@@ -1,0 +1,14 @@
+html, body {
+    background-color: #3e0391;
+}
+
+canvas {
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 5px solid darkgray;
+}

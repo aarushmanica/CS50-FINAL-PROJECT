@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inception Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="computer.png">
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <div class="slide-left">
+  <p id="title"><b>Inception</b></p>
+  <p>The application where you have applications</p>
+  </div>
+</div><br><br>
+
+<h3 id="desc">Welcome to Inception. Here you will find some useful and/or fun apps/games to pass the time with.</h3><br>
+<h3 id="desc2">Ever wanted to play a casual game of Snake or Tic-Tac-Toe or anything else of the like? Well here, you can! </h3><br>
+
+<p style="text-align: center;">Below you can find whatever application you want to go on. If you scroll further you will find a form which you can fill out. You can suggest anything, give positive or negative feedback or anything else.</p>
+
+<div class="d-flex p-3">
+    <a href="apps/snake.html" target="_blank"><button class="button" id="btn1">Snake</button></a>
+    <a href="apps/ttt.html" target="_blank"><button class="button" id="btn2">Tic-Tac-Toe</button></a>
+    <a href="apps/todo.html" target="_blank"><button class="button" id="btn3">Todo List</button></a>
+</div>
+
+<div class="d-flex p-3">
+    <a href="apps/typing.html" target="_blank"><button class="button" id="btn4">Typing Game</button></a>
+    <a href="apps/calculator.html" target="_blank"><button class="button" id="btn5">Calculator</button></a>
+    <a href="apps/tetris.html" target="_blank"><button class="button" id="btn6">Tetris</button></a>
+</div>
+
+
+<form action="https://formsubmit.co/aarushqueries@gmail.com" method="POST">
+  <div class="mb-3">
+    <label for "eml" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="eml" placeholder="Enter email">
+  </div><br>
+
+  <div class="mb-3">
+    <label for="cmn" class="form-label">Comment:</label>
+    <input type="textarea" class="form-control" id="cmn" placeholder="Please suggest anything (games, website suggestions etc.)" name="cmn">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+</body>
+</html>

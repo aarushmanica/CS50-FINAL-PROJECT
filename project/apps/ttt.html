@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="ttt.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        body {
+            font-family: "Verdana", sans-serif;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .game--title {
+            font-size: 100px;
+            color: #8086ff;
+            margin: 10px auto;
+        }
+
+        .game--container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            width: 306px;
+            margin: 10px auto;
+            background-color: #941e0c;
+            color: #04c0b2;
+        }
+
+        .cell {
+            font-family: "Outfit", sans-serif;
+            width: 100px;
+            height: 100px;
+            box-shadow: 2px 2px 2px 2px #deebc7;
+            border: 2px solid #deebc7;
+            cursor: pointer;
+            line-height: 100px;
+            font-size: 60px;
+        }
+
+        .game--status {
+            font-size: 50px;
+            color: #d629c5;
+            margin: 20px auto;
+        }
+
+        .game--restart {
+            background-color: #d629c5;
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            color: #5586e2;
+            box-shadow: 2px 2px 2px 2px #ffa76b;
+            border: 2px solid #ffa76b;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="game--title"><ins>Tic Tac Toe</ins></h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+    </section>
+
+    <script src="ttt.js"></script>
+
+</body>
+</html>

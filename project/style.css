@@ -1,0 +1,98 @@
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 2s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#title {
+    font-size: 69px;
+}
+
+#desc {
+  text-align: center;
+  background-color: lightgray;
+  color: #f54263;
+}
+
+#desc2 {
+  text-align: center;
+  color: black;
+}
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+#btn1 {
+  position: relative;
+}
+
+#btn2 {
+  position: relative;
+  right: -360px;
+}
+
+#btn3 {
+  position: relative;
+  right: -750px;
+}
+
+#btn4 {
+  position: relative;
+}
+
+#btn5 {
+  position: relative;
+  right: -360px;
+}
+
+#btn6 {
+  position: relative;
+  right: -750px;
+}
